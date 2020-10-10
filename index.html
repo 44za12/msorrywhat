@@ -29,8 +29,8 @@
   <div class="wrapper ">
     <div class="sidebar" data-color="purple" data-background-color="black">
       <div class="logo">
-        <a href="/msorrywhat/" class="simple-text logo-normal">
-          M Sorry What!?
+        <a href="/msorrywhat/">
+         <span class="simple-text text-primary bg-light font-weight-bold logo-normal">M Sorry What!?</span>
         </a>
       </div>
       <div class="sidebar-wrapper">
@@ -88,23 +88,23 @@
               <div class="row">
                 <div class="col-md-12">
                   <span>Add the key to your ifttt account:</span>
-                  <input id="iftttkey" type="password" class="form-control" />
+                  <input id="iftttkey" type="text" required class="form-control" />
                   <br>
                   <span>Add items to listen to (one at a time):</span>
                   <input id="name" type="text" class="form-control" />
                   <div class="row mt-2">
-                    <div class="col text-left">
-                      <button type="button" class="btn btn-primary pull-left" onclick="addToController()">
+                    <div class="col-md text-md-left text-sm-center">
+                      <button type="button" class="btn btn-primary pull-md-left" onclick="addToController()">
                         Add item to listener
                       </button>
                     </div>
-                    <div class="col text-center m-0">
-                      <button type="button" class="btn btn-success text-right" onclick="start()">
+                    <div class="col-md text-md-center text-sm-center m-0">
+                      <button type="submit" class="btn btn-primary text-md-right" onclick="start()">
                         Start listening
                       </button>
                     </div>
-                    <div class="col text-right m-0">
-                      <button type="button" class="btn btn-warning text-right" onclick="stop()">
+                    <div class="col-md text-md-right text-sm-center m-0">
+                      <button type="button" class="btn btn-primary text-md-right" onclick="stop()">
                         Stop listening
                       </button>
                     </div>
