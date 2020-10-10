@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta name="description"
+    content="A COVID19 data visualisor and prediction maker to built to help Predict the number of COVID19 or Corona Virus cases and to visualise the current COVID19 cases data in a better manner">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="keywords"
+    content="COVID19 Prediction, Corona Virus Prediction, Corona Virus Data, Covid 19 Prediction, Covid19 Predictor, COVID19 Prediction model, COVID19 Prediction Regression Model, COVID19 World Data, COVID19 World Data Prediction, COVID19 last seven day deaths, COVID19 last seven day cases">
+  <title>
+    MSorryWhat!?
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="https://cdn.rawgit.com/djibe/bootstrap-select/v1.13.0-dev/dist/css/bootstrap-select-daemonite.min.css"
+    rel="stylesheet">
+  <link href="/static/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
+  <link href="/static/css/style.css" rel="stylesheet" />
+  <script src="/static/js/index.umd.min.js"></script>
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="black">
+      <div class="logo">
+        <a href="/" class="simple-text logo-normal">
+          M Sorry What!?
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">
+              <i class="material-icons">dashboard</i>
+              <p>Main</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">
+              <i class="material-icons">face</i>
+              <p>About</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/docs.html">
+              <i class="material-icons">subject</i>
+              <p>How to use?</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+
+
+      <div class="content mt-5">
+        <div class="container-fluid mt-5">
+          <div class="card mt-5">
+            <div class="card-header card-header-dark text-center" style="margin-top:-100px !important">
+              <!-- <h3 class="card-title">Notifications</h3>
+              <p class="card-category">Handcrafted by our friend
+                <a target="_blank" href="https://github.com/mouse0270">Robert McIntosh</a>. Please checkout the
+                <a href="http://bootstrap-notify.remabledesigns.com/" target="_blank">full documentation.</a>
+              </p> -->
+              <img src="/static/images/msorrywhat.gif" class="img-fluid" alt="MSorryWhat!?" />
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <span>Add the key to your ifttt account:</span>
+                  <input id="iftttkey" type="text" class="form-control" />
+                  <br>
+                  <span>Add items to listen to (one at a time):</span>
+                  <input id="name" type="text" class="form-control" />
+                  <div class="row mt-2">
+                    <div class="col text-left">
+                      <button type="button" class="btn btn-primary pull-left" onclick="addToController()">
+                        Add item to listener
+                      </button>
+                    </div>
+                    <div class="col text-center m-0">
+                      <button type="button" class="btn btn-success text-right" onclick="start()">
+                        Start listening
+                      </button>
+                    </div>
+                    <div class="col text-right m-0">
+                      <button type="button" class="btn btn-warning text-right" onclick="stop()">
+                        Stop listening
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col text-left">
+                      <p class="lead">
+                      <ul id="names" class="list-group">
+                        <h3 class="font-weight-bold text-center">I'm currently listening for the below items:</h3>
+                      </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src="/static/js/script.js"></script>
+          <footer class="footer fixed-bottom">
+            <div class="container-fluid">
+              <div class="copyright pull-right">
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear())
+                </script>, made with <i class="material-icons">favorite</i> by
+                <a href="https://www.linkedin.com/in/iAazar" target="_blank">Aazar</a> for a better web.
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+
+      <!--   Core JS Files   -->
+      <script src="/static/js/core/jquery.min.js"></script>
+      <script src="/static/js/core/popper.min.js"></script>
+      <script src="/static/js/core/bootstrap-material-design.min.js"></script>
+      <script src="/static/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+      <script src="/static/js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
+</body>
+
+</html>
